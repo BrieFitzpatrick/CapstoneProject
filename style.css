@@ -23,7 +23,7 @@
   /*******************************************/
   
   body {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
   }
   
   
@@ -34,6 +34,11 @@
   header {
     background: #F1E0C5;
     height: 138px;
+  }
+
+  a {
+    text-decoration: none;
+    list-style: none;
   }
 
  ul {
@@ -52,17 +57,19 @@
 
  /* not sure how to make the image icon/home button not have that bar but it should probably be our home button*/
  
- #home-button {
-  transition: none;
+  #home-button {
+    transition: none;
 }
   
-  .shareYourStory {
+  /* .shareYourStory {
     padding: 10px 24px;
     background-color: #6c524a;
     color: white;
     border-radius: 120px;
-  }
+  } */
 
+
+  /* NAV */
 
  .nav-link {
     background-color: #563e3677;
@@ -83,7 +90,7 @@
     margin-right: 25px;
     padding: 10px 25px;
     text-decoration: none;
-    border-radius: 120px;
+    /* border-radius: 120px; */
   }
 
   .nav-link:hover::before{
@@ -96,6 +103,66 @@
     border-radius: 120px;
   }
 
+  /* OUR STORIES */
+  body, html {
+    height: 100%;
+  }
+
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("../our stories img 3.jpeg");
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text {
+    font-size: 2em;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FEE1C7;
+  }
+
+
+  .ourStories {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    margin-top: 180px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container .storyteller{
+    padding: 30px 60px;
+  }
+
+  .storyteller {
+    width: 40%;
+  }
+
+  #theirstory {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding: 30px;
+  }
+
+  /* .container {
+    justify-content: center;
+  } */
+
+
+
+
+ /* FOOTER */
 
   footer {
     margin: 0;
@@ -110,8 +177,9 @@
     align-items: flex-end;
     background: #F1E0C5;
     width: 100%;
-    height: 130px;
+    height: 142px;
     padding-top: 10px;
+    padding-right: 40px;
   }
   
   .footerLinks li {
@@ -119,9 +187,28 @@
     list-style: none;
   }
 
+  .footerLinks a {
+    color: #71816D;
+  }
+
+
+  .footerLinks .footerSocials {
+    position: relative;
+    left: -1220px;
+    top: 40px;
+  }
+
+  .fa-brands {
+    position: relative;
+    right: -80px;
+    padding-right: 15px;
+  }
   
+
+
+
+
   /******************************************
   /* ADDITIONAL STYLES
   /*******************************************/
-  
   
