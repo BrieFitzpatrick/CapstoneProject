@@ -145,9 +145,15 @@
   }
 
   .storyteller {
-    width: 20%;
+    width: 40%;
   }
 
+  #theirstory {
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    padding: 30px;
+  }
 
   /* .container {
     justify-content: center;
