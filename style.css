@@ -41,7 +41,7 @@
     list-style: none;
   }
 
- ul {
+ #nav-list {
     display: flex;
     justify-content: flex-end;
     list-style: none;
