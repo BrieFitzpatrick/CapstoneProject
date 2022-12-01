@@ -23,10 +23,9 @@
   /*******************************************/
  
   body {
-    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
-  }
- 
- 
+    font-family: 'Raleway', sans-serif;  }
+  
+  
   /******************************************
   /* LAYOUT
   /*******************************************/
@@ -249,10 +248,12 @@
 }
  
 #we-had-abortions-p {
+  font-family: 'Comfortaa', cursive;
   font-size: 30px;
   align-self: center;
 }
- 
+
+@media only screen and (max-width: )
 @media only screen and (max-width: 600px) {
  
   #we-had-abortions {
