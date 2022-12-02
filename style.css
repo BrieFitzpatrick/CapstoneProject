@@ -267,6 +267,79 @@
   }
 }
  
+/*  M */
+
+.update-div {
+  background: #fefaf4;
+  margin-top: 0em ;
+  position: relative;
+  overflow: auto;
+  height: 30em
+
+  
+}
+.update-list {
+
+justify-content: left;
+width: 100%;
+height: 100%;
+overflow: hidden;
+
+}
+
+
+.update-item {
+  width: 50%;
+  display: flex; 
+  flex-direction: column;
+  background: #fefaf4;
+  height: 25em;
+
+}
+
+.list-content {
+  margin-top: 4em;
+  width: 50em;
+  height: 100%;
+  justify-content: left;
+  margin-left: -40px;
+
+}
+.update-content {
+  padding:20em 5em 5em 5em;
+  
+  text-align: justify;
+  width: 40em;
+  height: 40em;
+  background: #d9c6a6;
+}
+
+.about {
+  justify-content: center;
+
+  color:bisque;
+  background: #6c524a;
+
+}
+
+.about-description {
+  padding: 3em 3em 4em 4em;
+}
+.about-items {
+  justify-content:left;
+
+}
+
+.about-icon {
+  padding: 1em;
+  justify-content: center;
+}
+
+.about2 {
+  position: -5px;
+}
+
+/*  M */
  
   /******************************************
   /* ADDITIONAL STYLES
