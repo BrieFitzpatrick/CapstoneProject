@@ -174,7 +174,7 @@
 /*  M */
   
   body {
-    background-color: #f9fafb;
+    background-color: white;
     font-family: 'Open Sans', sans-serif;
     display: inline-block;
     position: relative;
@@ -185,7 +185,7 @@
   }
   
   .container {
-    background-color: #fff;
+    background-color:#FEF9E7;
     border-radius: 5px;
     box-shadow: 0 2px 10px #563e36;
     width: 400px;
