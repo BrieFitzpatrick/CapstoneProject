@@ -1,0 +1,152 @@
+/* Box Model Hack */
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  /* Clear fix hack */
+  .clearfix:after {
+       content: ".";
+       display: block;
+       clear: both;
+       visibility: hidden;
+       line-height: 0;
+       height: 0;
+  }
+  
+  .clear {
+      clear: both;
+  }
+  
+  /******************************************
+  /* BASE STYLES
+  /*******************************************/
+  
+  body {
+    font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    background-color: #F1E0C5;
+  }
+  
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+
+  header {
+    background: #F1E0C5;
+    height: 138px;
+  }
+
+  a {
+    text-decoration: none;
+    list-style: none;
+  }
+
+ ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    position: relative;
+    top: -70px;
+  }
+
+  .logoImg {
+    max-width: 10%;
+    width: auto;
+    margin-left: 20px;
+  }
+
+ /* not sure how to make the image icon/home button not have that bar but it should probably be our home button*/
+ 
+  #home-button {
+    transition: none;
+}
+  
+  /* .shareYourStory {
+    padding: 10px 24px;
+    background-color: #6c524a;
+    color: white;
+    border-radius: 120px;
+  } */
+
+
+  /* NAV */
+
+ .nav-link {
+    background-color: #563e3677;
+    color: white;
+    margin-right: 25px;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 120px;
+  }
+
+  .nav-link:hover {
+    transition-delay: 5s;
+  } 
+
+  .nav-link:hover::after{
+    background-color: #563e3677;
+    color: white;
+    margin-right: 25px;
+    padding: 10px 25px;
+    text-decoration: none;
+    /* border-radius: 120px; */
+  }
+
+  .nav-link:hover::before{
+    content: "";
+    background-color: #563e3677;
+    color: white;
+    margin-right: 25px;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 120px;
+  }
+
+  .hand {
+    display: block;
+    margin: 0px auto 0px;
+    width: 175px;
+    height: 175px;
+   
+  }
+    
+
+    .hero-pic {
+      height: 500px;
+      width: 100%;
+      display: block;
+      margin: 0px auto 0px;
+    }
+
+
+    .p {
+      text-align: center;
+      font-size: 12px;
+    }
+
+    div {
+      align-items: center;
+      justify-content: center;
+    }
+    .container {
+      display: inline-block;
+
+    }
+
+    .Test{
+      flex-direction: column;
+      margin: 
+    }
+
+    .Options {
+      align-items: center;
+      justify-content: center;
+    }
+
+
+    .img{
+      width: 30%;
+      padding: 10px;
+    }
