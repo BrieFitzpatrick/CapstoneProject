@@ -115,7 +115,27 @@
     background-size: cover;
     position: relative;
   }
+
+  .contact {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2));
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
  
+  .contact-text {
+    font-size: 2em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FEE1C7;
+  }
+
   .hero-text {
     font-size: 2em;
     text-align: center;
@@ -352,6 +372,12 @@ overflow: hidden;
   position: -5px;
 }
 
+.Form {
+  border: solid;
+  border-color: #563e36;
+  border-width: 20px;
+  text-align: center;
+}
 /*  M */
  
   /******************************************
