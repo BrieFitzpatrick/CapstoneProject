@@ -225,6 +225,7 @@
  
 .title {
   font-family: 'Comfortaa', cursive;
+  background-color: #FEE1C7;
 }
  
 #intro-img {
@@ -239,21 +240,33 @@
   flex-basis: 20%;
   margin: 10%;
 }
- 
+
+#share-your-story-intro {
+  padding-top: 8%;
+  font-size: 3.4em;
+  text-align: center;
+}
  
 #we-had-abortions {
-  width: 25%;
-  min-width: 25%;
+  width: 100%;
+  min-width: 20%;
+  height: auto;
+  min-height: 20%;
   padding: 2%;
+  object-fit: contain;
 }
  
 #we-had-abortions-p {
   font-family: 'Comfortaa', cursive;
-  font-size: 30px;
+  font-size: 2em;
   align-self: center;
+  padding: 3%;
+  object-fit: contain;
 }
 
-
+.body-tag {
+  background-color: #FEE1C7;
+}
 @media only screen and (max-width: 600px) {
  
   #we-had-abortions {
