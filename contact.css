@@ -147,31 +147,8 @@
   }
  
  
-/* YOUR-STORY STYLES */
  
-.title {
-  font-family: 'Comfortaa', cursive;
-  background-color: #FEE1C7;
-}
- 
-#intro-img {
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  border-style: double;
-  border-radius: 25px;
-  border-color:rgba(0, 0, 0, 0.5);
-  border-width: 5px;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-  flex-basis: 20%;
-  margin: 10%;
-}
-
-.body-tag {
-  background-color: #FEE1C7;
-}
- 
-/*  M */
+/*  form details */
   
   body {
     background-color: white;
