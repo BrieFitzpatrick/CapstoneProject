@@ -120,33 +120,66 @@
       margin: 0px auto 0px;
     }
 
+  h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+  
+  }
 
-    .p {
+    h1{ 
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size: 80px;
+      color:  #F1E0C5;
       text-align: center;
-      font-size: 12px;
-    }
-
-    div {
-      align-items: center;
-      justify-content: center;
-    }
-    .container {
-      display: inline-block;
-
-    }
-
-    .Test{
-      flex-direction: column;
-      margin: 
-    }
-
-    .Options {
-      align-items: center;
-      justify-content: center;
+      
     }
 
 
-    .img{
-      width: 30%;
-      padding: 10px;
-    }
+  .about {
+  justify-content: center;
+
+  color:bisque;
+  background: #6c524a;
+
+  }
+
+  .about-abortion {
+  padding: 3em 3em 4em 4em;
+  
+  }
+
+ .about-abortion p {
+    font-size: 29px;
+    text-align: center;
+   
+  }
+
+  .how-abortion {
+    display: flex;
+    padding: 15px;
+    justify-content: space-around;
+    
+}
+.paying-abortion {
+  padding: 15px;
+  
+}
+
+.how-abortion img{
+  padding: 5px;
+  width: 33%;
+}
+
+.paying-abortion img{
+  width: 32%;
+  padding: 30px;
+}
+
+.frame {
+  width: 33%;
+  height 300px;
+  text-align: center;
+  flex-direction: row-reverse;
+
+}
+    
