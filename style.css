@@ -146,6 +146,10 @@
   .container .storyteller{
     padding: 30px 60px;
   }
+
+  .container:hover .overlay {
+    opacity: 1;
+  }
  
  
   .storyteller {
@@ -154,6 +158,44 @@
     display: block;
   }
  
+  .overlay {
+    position: absolute;
+    top: 30px;
+    bottom: 0;
+    left: 50px;
+    right: 0;
+    height: 85%;
+    width: 68%;
+    opacity: 0;
+    transition: .4s ease;
+    background-color: #6c524a;
+  }
+
+  #overlay {
+    display: block;
+    width: 90%;
+    height: auto;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    word-wrap: break-word;
+    padding-top: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .overlayContainer {
+    position: relative;
+    width: 50%;
+  }
+
   #theirStory {
     color: #563e36;
     padding-top: 40px;
