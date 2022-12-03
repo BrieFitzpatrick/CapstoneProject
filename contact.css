@@ -220,6 +220,11 @@
     color: brown;
     text-align: center;
 }
+
+#message {
+  height: 150px; 
+  padding-bottom: 125px;
+}
 /*  M */
  
   /******************************************

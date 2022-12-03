@@ -1,14 +1,75 @@
-const form = document.getElementById('form');
-const fname = document.getElementById('fname');
-const lname = document.getElementById('lname');
-const email = document.getElementById('email');
-const message = document.getElementById('message');
-const newsletter = document.getElementById('newsletter');
-const btn = document.getElementById('submit');
-const form_fields = [fname, lname, email, message, newsletter];
 
-btn.addEventListener("click", function(e){
-  console.log("YOU CLICKED"); //to see if it reconginzes the click and it does!!
+function validateFormOnSubmit(form) {
+    reason = "";
+    reason += validateFName(form.fname);
+    reason += validateLName(form.lname);
+    reason += validateEmail(form.email);
+    //reason += validateNewsletter(form.newsletter);
+
+    console.log(reason);
+    if (reason.length > 0) {
+
+        return false;
+    } else {
+        return false;
+    }
+}
+
+function validateFName(fname) {
+    var error = "";
   
+    if (fname.value.length == 0) {
+      fname.style.borderColor = 'Red';
+      document.getElementById('fname-error').innerHTML = "The required field has not been filled in";
+      var error = "1";
+    } else {
+      fname.style.borderColor = '#784212';
+      document.getElementById('fname-error').innerHTML = '';
+    }
+    return error;
+  }
+
+  function validateLName(lname) {
+    var error = "";
   
-});
+    if (lname.value.length == 0) {
+      lname.style.borderColor = 'Red';
+      document.getElementById('lname-error').innerHTML = "The required field has not been filled in";
+      var error = "2";
+    } else {
+      lname.style.borderColor = '#784212';
+      document.getElementById('lname-error').innerHTML = '';
+    }
+    return error;
+  }
+  
+  // validate email as required field and format
+function trim(s) {
+  return s.replace(/^\s+|\s+$/, '');
+}
+
+function validateEmail(email) {
+  var error = "";
+  var temail = trim(email.value); // value of field with whitespace trimmed off
+  var emailFilter = /^[^@]+@[^@.]+\.[^@]*\w\w$/;
+  var illegalChars = /[\(\)\<\>\,\;\:\\\"\[\]]/;
+
+  if (email.value == "") {
+      email.style.borderColor = 'Red';
+      document.getElementById('email-error').innerHTML = "Please enter an email address.";
+      var error = "2";
+  } else if (!emailFilter.test(temail)) { //test email for illegal characters
+      email.style.borderColor = 'Red';
+      document.getElementById('email-error').innerHTML = "Please enter a valid email address.";
+      var error = "3";
+  } else if (email.value.match(illegalChars)) {
+      email.style.borderColor = 'Red';
+      var error = "4";
+      document.getElementById('email-error').innerHTML = "Email contains invalid characters.";
+  } else {
+      email.style.borderColor = '#784212';
+      document.getElementById('email-error').innerHTML = '';
+  }
+  return error;
+}
+
