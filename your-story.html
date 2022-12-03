@@ -18,13 +18,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=IBM+Plex+Serif&family=Raleway&display=swap" rel="stylesheet"> 
 	</head>
 
-	<body>
+	<body class="body-tag">
 		<header>
 			<nav>
 				<a href="./index.html" id="home-button"><img class="logoImg" src="Images/WT+logoprimary+logo.png" alt="logo"></a>
 				<ul id="nav-list">
 					<li><a href="./our-stories.html" class="nav-link">Our Stories</a></li>
-					<li><a href="./get-involved.html" class="nav-link">Get Involved</a></li>
+					<li><a href="./abortion101.html" class="nav-link">Abortion 101</a></li>
 					<li><a href="./your-story.html" class="nav-link">Share Your Story</a></li>
 					<li><a href="./contact.html" class="nav-link">Contact</a></li>
 				</ul>
@@ -33,20 +33,18 @@
 
 
 
+
+		<div id="share-your-story-intro">
+			<h1 class="title">Share Your Abortion Story</h1>
+		</div>
 		<section class=share-form>
-			<div id="share-your-story-intro">
-				<h1 class="title">Share Your Abortion Story</h1>
-			</div>
-
 			<div id="intro-img">
-				<img src="https://pbs.twimg.com/media/EnMx7RtVcAE-weB?format=png&name=large" alt="Drawing of three women holding up a banner stating 'We Had Abortions.'" id="we-had-abortions">
-
 				<p id="we-had-abortions-p">Sharing abortion stories brings us together. Sharing your story can be cathartic and help you prepare to share with your loved ones. Sharing your story helps remind you that you are not alone. Want to share your story on our website? Fill out this form.</p>
-
+				<img src="https://pbs.twimg.com/media/EnMx7RtVcAE-weB?format=png&name=large" alt="Drawing of three women holding up a banner stating 'We Had Abortions.'" id="we-had-abortions">
 			</div>
 		</section>
-		<section id="guiding-questions">
-			<div class = "sides-of-form">
+		<section class="questions-container">
+			<div class = "guiding-questions">
 				<h3>Guiding Questions:</h3>
 				<ul id="questions">
 					<li>How do you feel the cultural environment and messages you received about abortion impacted your experience, both positive and negative?</li>
@@ -59,30 +57,34 @@
 					<li>Was there someone who helped you navigate barriers? How did they help you? What stands out about that person to you?</li>
 					<li>Was there a barrier that you were able to bypass because of your privilege? How did that impact your abortion experience?</li>
 					<li>What support did you or didn’t you have during your abortion? How do you think that impacted you?</li>
-				</ol>
+				</ul>
 			</div>
-			<div>           
+			<div class="testimonial-form">           
 				<img>
 				<p></p>
 				<form>
 					<label for="testify-first-name">
 						Your first name:
 					</label><br>
-					<input type="text" id="testify-first-name" name="first-name"><br>
+					<input type="text" id="testify-first-name" name="first-name"><br><br>
 					<label for="testify-last-name">
 						Your last name:
 					</label><br>
-					<input type="text" id="testify-last-name" name="last-name"><br>
+					<input type="text" id="testify-last-name" name="last-name"><br><br>
 					<label for="testify-pseudonym">
 						Your alias:
 					</label><br>
+					
 					<input type="text" id="testify-pseudonym" name="pseudonym"><br><br>
 					<label for="location">
 						You are from:
-						You are from:
 					</label><br>
-					<input type="text" id="location" name="location"><br>
-					<br>
+					<input type="text" id="location" name="location"><br><br>
+					<label for="abortion-message">
+						Your abortion story:
+					</label><br>
+					<input type="text" id="abortion-message" name="abortion-message" size=30%><br><br>
+
 				</form>
 			</div>
 
@@ -91,5 +93,18 @@
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
-
+	<footer>
+		<div class="footerLinks">
+			<div class="footerSocials">
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-square-instagram"></i>
+			</div>	
+			<li><a href="./index.html">About</a></li>
+			<li><a href="./our-stories.html">Our Stories</a></li>
+			<li><a href="./abortion101.html">Abortion 101</a></li>
+			<li><a href="./your-story.html">Share Your Story</a></li>
+			<li><a href="./contact.html">Contact</a></li>
+		</div>
+	</footer>
 </html>

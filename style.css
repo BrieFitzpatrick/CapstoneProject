@@ -270,7 +270,37 @@ footer {
 
 .title {
 font-family: 'Comfortaa', cursive;
-background-color: #FEE1C7;
+background-color: white;
+font-size: 3rem;
+}
+
+.share-form {
+  background-color: white;
+}
+
+.questions-container {
+  display: flex;
+  background-color: white;
+  font-size: 1.4rem;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.guiding-questions {
+  align-items: stretch;
+
+  width: 40%;
+  justify-content: space-around;
+}
+
+.testimonial-form {
+  width: 30%;
+}
+
+#abortion-message {
+  size: 20%;
 }
 
 #intro-img {
@@ -284,6 +314,7 @@ border-width: 5px;
 box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 flex-basis: 20%;
 margin: 10%;
+background-color:rgba(200, 226, 233, 0.57)
 }
 
 #share-your-story-intro {
@@ -310,19 +341,19 @@ object-fit: contain;
 }
 
 .body-tag {
-background-color: #FEE1C7;
+background-color: white;
 }
 @media only screen and (max-width: 600px) {
 
-#we-had-abortions {
+  #we-had-abortions {
   display: none;
-}
+  }
 
-#we-had-abortions-p {
+  #we-had-abortions-p {
   padding: 2%;
   text-align: center;
   font-size: 1.2rem;
-}
+  }
 }
 
 /*  M */
