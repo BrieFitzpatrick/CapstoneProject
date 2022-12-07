@@ -266,80 +266,87 @@ footer {
 }
 
 
-/* YOUR-STORY STYLES */
+/* ////////////////YOUR-STORY STYLES///////////////// */
+
+.body-tag {
+  background-color: rgb(255, 255, 255);
+  }
+
 
 .title {
 font-family: 'Comfortaa', cursive;
-background-color: white;
 font-size: 3rem;
+padding: none;
+margin: none;
+}
+
+#share-your-story-intro {
+  padding-top: 5%;
+  font-size: 3.4em;
+  text-align: center;
+  
 }
 
 .share-form {
-  background-color: white;
+  background-color: rgb(219, 173, 115);
+  background-image: url('https://npr.brightspotcdn.com/dims4/default/ac9470c/2147483647/strip/true/crop/816x528+0+0/resize/1760x1138!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F69%2F1d%2F78a03416486dabc78b14437ca7fe%2Ftbq-abortionheader.png');
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
+#intro-img {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  border-style: double;
+  border-radius: 25px;
+  border-color:rgba(0, 0, 0, 0.5);
+  border-width: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  flex-basis: 20%;
+  margin: 10%;
+  background-color:rgba(172, 213, 182, 0.413);
+  }
+  
+#we-had-abortions-p {
+  font-family: 'Comfortaa', cursive;
+  font-size: 2em;
+  align-self: center;
+  padding: 3%;
+  object-fit: contain;
+  
+  }
+  
+#we-had-abortions {
+  width: 100%;
+  min-width: 20%;
+  height: auto;
+  min-height: 20%;
+  padding: 2%;
+  object-fit: contain;
+  }
+
+  #spacer {
+    background-color: rgb(219, 173, 115);
+    height: 10%;
+  }
+
 .questions-container {
+ 
   display: flex;
   background-color: white;
   font-size: 1.4rem;
   justify-content: space-around;
   flex-direction: row;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin: 5%;
 }
 
 .guiding-questions {
   align-items: stretch;
-
+  font-size: 1rem;
   width: 40%;
   justify-content: space-around;
-}
-
-.testimonial-form {
-  width: 30%;
-}
-
-#abortion-message {
-  
-  width: 100%;
-  height: 500px;
-}
-
-#intro-img {
-display: flex;
-justify-content: center;
-align-items: left;
-border-style: double;
-border-radius: 25px;
-border-color:rgba(0, 0, 0, 0.5);
-border-width: 5px;
-box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-flex-basis: 20%;
-margin: 10%;
-background-color:rgba(200, 226, 233, 0.57)
-}
-
-#share-your-story-intro {
-padding-top: 8%;
-font-size: 3.4em;
-text-align: center;
-}
-
-#we-had-abortions {
-width: 100%;
-min-width: 20%;
-height: auto;
-min-height: 20%;
-padding: 2%;
-object-fit: contain;
-}
-
-#we-had-abortions-p {
-font-family: 'Comfortaa', cursive;
-font-size: 2em;
-align-self: center;
-padding: 3%;
-object-fit: contain;
+  padding: 1rem;
 }
 
 #questions {
@@ -349,9 +356,18 @@ object-fit: contain;
   list-style-type: circle;
 }
 
-.body-tag {
-background-color: white;
+.testimonial-form {
+  width: 30%;
 }
+
+#abortion-message {
+  width: 100%;
+  height: 500px;
+  padding-bottom: 470px;
+}
+
+/* MEDIA QUERIES */
+
 @media only screen and (max-width: 600px) {
 
   #we-had-abortions {
@@ -364,7 +380,7 @@ background-color: white;
   font-size: 1.2rem;
   }
 }
-
+/*//////////////////////////YOUR-STORY//////////////////////////*/
 /*  M */
 
 .update-div {
@@ -452,3 +468,24 @@ overflow: hidden;
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+
+/* Back to Top Button */
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgba(63, 44, 44, 0.568); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #myBtn:hover {
+   background-color: rgba(232, 114, 212, 0.304); /* Add a pink background on hover */
+  }
