@@ -4,6 +4,9 @@ function validateFormOnSubmit(form) {
     reason += validateFName(form.fname);
     reason += validateLName(form.lname);
     reason += validateEmail(form.email);
+
+    confirmSubmit();
+
     //reason += validateNewsletter(form.newsletter);
 
     console.log(reason);
@@ -35,7 +38,7 @@ function validateFName(fname) {
     if (lname.value.length == 0) {
       lname.style.borderColor = 'Red';
       document.getElementById('lname-error').innerHTML = "The required field has not been filled in";
-      var error = "2";
+      var error = "1";
     } else {
       lname.style.borderColor = '#784212';
       document.getElementById('lname-error').innerHTML = '';
@@ -57,14 +60,14 @@ function validateEmail(email) {
   if (email.value == "") {
       email.style.borderColor = 'Red';
       document.getElementById('email-error').innerHTML = "Please enter an email address.";
-      var error = "2";
+      var error = "1";
   } else if (!emailFilter.test(temail)) { //test email for illegal characters
       email.style.borderColor = 'Red';
       document.getElementById('email-error').innerHTML = "Please enter a valid email address.";
-      var error = "3";
+      var error = "2";
   } else if (email.value.match(illegalChars)) {
       email.style.borderColor = 'Red';
-      var error = "4";
+      var error = "3";
       document.getElementById('email-error').innerHTML = "Email contains invalid characters.";
   } else {
       email.style.borderColor = '#784212';
@@ -73,3 +76,11 @@ function validateEmail(email) {
   return error;
 }
 
+function confirmSubmit() {
+  if (reason == ""){
+    alert("YOU SUCCESSFULLY SUBMITED!");
+    document.getElementById('form').reset();
+  }else {
+    alert("You have missing fields");
+  }
+};
