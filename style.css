@@ -383,11 +383,21 @@ margin: none;
 /*//////////////////////////YOUR-STORY//////////////////////////*/
 /*  M */
 
+
 .update-div {
   background: #ffffff;
   margin-top: 0em;
   position: relative;
   overflow: auto;
+  height: 30em;
+
+  
+}
+
+
+.update-div2 {
+  background: #ffffff;
+  margin-top: 0em;
   height: 30em;
 
   
@@ -398,9 +408,18 @@ justify-content: left;
 width: 100%;
 height: 100%;
 overflow: hidden;
+list-style: none;
 
 }
 
+.update-list2 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  list-style: none;
+  
+  }
 
 .update-image {
   width: 50%;
@@ -413,6 +432,19 @@ overflow: hidden;
 
 }
 
+.update-image2 {
+  max-width: 31em;
+  display: inline-block;
+  flex-direction: column;
+  background: #fefaf4;
+  height: 0em;
+  justify-content: left;
+  white-space: fixed;
+
+
+}
+
+
 .updateimage {
   margin-top: 0em;
   width: 30em;
@@ -420,6 +452,16 @@ overflow: hidden;
 
 }
 
+.updateimage2 {
+  margin-top: 0em;
+  width: 31em;
+  max-width: 31em;
+  justify-content: right;
+
+}
+.list-content {
+  max-width: 31em;
+}
 
 
 .update-content {
@@ -429,12 +471,33 @@ overflow: hidden;
   height:30em;
   background:#fefaf4;
   margin-left: 30em;
+  
+}
+
+.update-content2 {
+  padding:12em 5em 2em 5em;
+  text-align: justify;
+  width: auto;
+  height:30em;
+  background:#fefaf4;
+  margin-left: -3em;
 
   
 }
 
 .update-text {
   width: 50em;
+  line-height: 2em;
+}
+.about-text {
+  padding-top: 2em;
+  width: 100em;
+  line-height: 2em;
+}
+
+.about-text {
+  padding-top: 2em;
+  width: 85em;
   line-height: 2em;
 }
 
@@ -448,22 +511,88 @@ overflow: hidden;
 
 .about-description {
   padding: 3em 3em 4em 4em;
+  height: 5em;
+  width: 100%;
 }
 .about-items {
   justify-content:left;
+  padding: 4em;
 
 }
 
 .about-icon {
   padding: 1em;
   justify-content: center;
+  width: 15em;
+
 }
 
 .about2 {
   position: -5px;
 }
 
+.signup {
+  justify-content: center;
+
+  color:bisque;
+  background: #836d66;
+
+}
+
+.press-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #836d66;
+}
+
+.press-container {
+  margin: 4em 4em 4em 4em;
+  margin-bottom: 8em;
+  padding: 4em;
+  padding-block: 4em;
+}
+
+.press-items {
+  justify-content:left;
+  padding: .5em;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 1em
+}
+
+.press-container {
+  margin: -3em 0em 0em 0em;
+  margin-bottom: 8em;
+  padding: 4em;
+  padding-block: em;
+  line-height: 2em;
+}
+
+.link-press {
+  text-decoration: wavy;
+ color: rgb(226, 177, 185);
+ line-height: 2em;
+}
+
+.link-press:hover {
+  color: rgb(238, 242, 119);
+
+
+}
+
+.update-link {
+  text-decoration: wavy;
+  color: rgb(226, 177, 185);
+  line-height: 2em;
+
+}
+
+.update-link:hover {
+  color: rgb(238, 242, 119);
+}
+
 /*  M */
+
 
 /******************************************
 /* ADDITIONAL STYLES
