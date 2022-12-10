@@ -503,13 +503,14 @@ list-style: none;
 }
 
 .about-description {
-  padding: 3em 3em 4em 4em;
+  padding: 3em 3em 3em 4em;
   height: 5em;
   width: 100%;
 }
 .about-items {
-  justify-content:left;
-  padding: 4em;
+  justify-content:center;
+  padding: 5em;
+  overflow: auto;
 
 }
 
@@ -517,9 +518,19 @@ list-style: none;
   padding: 1em;
   justify-content: center;
   width: 15em;
+  padding-top: 5em;
+  padding-left: 5em;
 
 }
 
+.about-icon1 {
+  padding: 1em;
+  justify-content: center;
+  width: 25em;
+  padding-top: 5em;
+  padding-left: 0em;
+
+}
 .about2 {
   position: -5px;
 }
@@ -557,7 +568,6 @@ list-style: none;
   margin: -3em 0em 0em 0em;
   margin-bottom: 8em;
   padding: 4em;
-  padding-block: em;
   line-height: 2em;
 }
 
@@ -584,8 +594,16 @@ list-style: none;
   color: rgb(238, 242, 119);
 }
 
-/*  M */
 
+.sharestory{
+  margin-top: -10em;
+  justify-content: center;
+  color:rgb(64, 57, 49);
+  background: #ffffff;
+  line-height: 2em;
+  padding: 4em 4em 3em 3em;
+}
+/*  M */
 
 /******************************************
 /* ADDITIONAL STYLES
